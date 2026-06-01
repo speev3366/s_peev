@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "nav.about": "About",
+    "nav.about": "About me",
     "nav.skills": "Skills",
     "nav.experience": "Experience",
     "nav.certifications": "Certifications",
@@ -20,15 +20,17 @@ const translations = {
     "metrics.projects": "Jira projects supported",
     "metrics.apps": "Application management",
     "metrics.users": "Users supported",
-    "about.kicker": "About",
-    "about.title": "Service reliability through structure, automation and calm coordination.",
-    "about.copy": "I work across business continuity, IT service management and Atlassian Cloud administration, turning operational complexity into clear workflows, useful reporting and repeatable processes.",
-    "about.card1Title": "Operational Leadership",
-    "about.card1Text": "Team coordination for critical applications, incident priorities, escalations, vendor controls and management reporting.",
-    "about.card2Title": "Atlassian Cloud",
-    "about.card2Text": "Organization administration for Jira, Jira Service Management and Confluence across large-scale environments.",
-    "about.card3Title": "Process Delivery",
-    "about.card3Text": "Requirements, workflows, automations, SLAs, dashboards and integrations built around real business needs.",
+    "about.kicker": "About me",
+    "about.title": "I connect operations, people and systems so work moves with less friction.",
+    "about.copy": "I am an IT Operations and Service Management professional with hands-on experience in team leadership, project coordination, business continuity, Service Desk and Atlassian Cloud administration.",
+    "about.copy2": "My strongest zone is where structure meets execution: designing Jira and JSM workflows, improving SLAs, building automations, creating dashboards, coordinating incidents and helping teams make clearer decisions with better data.",
+    "about.copy3": "I like practical solutions: fewer unclear handovers, better ownership, useful reporting and service processes that people can actually follow under pressure.",
+    "about.card1Title": "Operational calm",
+    "about.card1Text": "Team leadership, incident priorities, escalations and business continuity work handled with structure and clear ownership.",
+    "about.card2Title": "Atlassian in scale",
+    "about.card2Text": "Organization administration for Jira, Jira Service Management and Confluence, including permissions, workflows, automations, SLAs, dashboards and apps.",
+    "about.card3Title": "Practical delivery",
+    "about.card3Text": "Projects delivered with business and technical stakeholders, from requirements and testing to rollout, reporting and continuous improvement.",
     "skills.kicker": "Skills",
     "skills.title": "Core capabilities",
     "experience.kicker": "Timeline",
@@ -67,8 +69,33 @@ const translations = {
     "projects.stat1": "4,500+ users",
     "projects.stat2": "Stakeholder ownership",
     "projects.stat3": "End-to-end project management",
+    "projects.scopeLabel": "Scope delivered",
+    "projects.scope1": "Assessed the current social communication platform and business needs.",
+    "projects.scope2": "Led alternative product research, selection, testing and risk analysis.",
+    "projects.scope3": "Prepared implementation, migration and integration reproduction plans.",
+    "projects.scope4": "Supported contract alignment to protect the client's interests.",
+    "projects.scope5": "Built the communication strategy and acted as main contact point.",
+    "projects.scope6": "Delivered a successful migration with no loss of data or user accounts.",
+    "projects.area1Label": "Jira integrations",
+    "projects.area1Title": "Connected service ecosystem",
+    "projects.area1Item1": "ERP integration for account management similar to Active Directory processes.",
+    "projects.area1Item2": "Jira integration with ServiceNow for service coordination and visibility.",
+    "projects.area1Item3": "Jira and Power BI integration for operational analytics and reporting.",
+    "projects.area1Item4": "Jira and Gemini integration for AI-supported service workflows.",
+    "projects.area2Label": "ITSM operating model",
+    "projects.area2Title": "High-control Jira service management",
+    "projects.area2Item1": "High-level Jira governance across projects, roles and service processes.",
+    "projects.area2Item2": "Structured projects with clear goals, tasks, workflows and SLA logic.",
+    "projects.area2Item3": "Standardized request channel designed for maximum handling efficiency.",
+    "projects.area2Item4": "Automations across process steps and cross-team communication.",
+    "projects.area3Label": "AI mini-project",
+    "projects.area3Title": "PDF to Jira field automation",
+    "projects.area3Item1": "Mini-project for sending PDF documents to Gemini for extraction and interpretation.",
+    "projects.area3Item2": "Automatic population of structured Jira fields from document content.",
+    "projects.area3Item3": "Reduced manual entry and improved traceability for document-based requests.",
     "projects.quote": "\"Stefan was excellent at managing the migration from their previous tool, handling a complex change process with organisation, clarity, and real attention to detail.\"",
     "education.kicker": "Education",
+    "education.title": "Education timeline",
     "education.law": "Master's Degree in Law",
     "education.unwe": "University of National and World Economy - Sofia",
     "education.cert": "QA, Relational Databases, Power BI Analytics",
@@ -101,15 +128,17 @@ const translations = {
     "metrics.projects": "Jira projects supported",
     "metrics.apps": "Application management",
     "metrics.users": "Поддържани потребители",
-    "about.kicker": "За мен",
-    "about.title": "Надеждни услуги чрез структура, автоматизация и спокойна координация.",
-    "about.copy": "Работя в пресечната точка между business continuity, IT service management и Atlassian Cloud администрация, като превръщам оперативната сложност в ясни workflow-и, полезни отчети и повторяеми процеси.",
-    "about.card1Title": "Оперативно лидерство",
-    "about.card1Text": "Координация на екипи, критични приложения, incident приоритети, ескалации, vendor контрол и reporting към management.",
-    "about.card2Title": "Atlassian Cloud",
-    "about.card2Text": "Организационна администрация на Jira, Jira Service Management и Confluence в големи среди.",
-    "about.card3Title": "Process Delivery",
-    "about.card3Text": "Requirements, workflows, automations, SLAs, dashboards и integrations, изградени около реални бизнес нужди.",
+    "about.kicker": "About me",
+    "about.title": "Свързвам операции, хора и системи, за да се движи работата с по-малко триене.",
+    "about.copy": "Аз съм IT Operations и Service Management професионалист с практически опит в team leadership, project coordination, business continuity, Service Desk и Atlassian Cloud администрация.",
+    "about.copy2": "Най-силната ми зона е там, където структурата среща изпълнението: Jira и JSM workflows, SLA логика, автоматизации, dashboards, incident coordination и по-добри решения чрез по-добри данни.",
+    "about.copy3": "Харесвам практични решения: по-малко неясни handover-и, по-добра ownership култура, полезен reporting и service процеси, които хората могат реално да следват под напрежение.",
+    "about.card1Title": "Оперативно спокойствие",
+    "about.card1Text": "Team leadership, incident priorities, escalations и business continuity работа със структура и ясна ownership логика.",
+    "about.card2Title": "Atlassian в мащаб",
+    "about.card2Text": "Организационна администрация на Jira, Jira Service Management и Confluence, включително permissions, workflows, automations, SLAs, dashboards и apps.",
+    "about.card3Title": "Практична реализация",
+    "about.card3Text": "Проекти с business и technical stakeholders - от requirements и testing до rollout, reporting и continuous improvement.",
     "skills.kicker": "Умения",
     "skills.title": "Основни компетенции",
     "experience.kicker": "Timeline",
@@ -148,8 +177,33 @@ const translations = {
     "projects.stat1": "4,500+ users",
     "projects.stat2": "Stakeholder ownership",
     "projects.stat3": "End-to-end project management",
+    "projects.scopeLabel": "Scope delivered",
+    "projects.scope1": "Оценка на текущото състояние на социалната комуникационна платформа и бизнес нуждите.",
+    "projects.scope2": "Проучване и подбор на алтернативен продукт, тестване и risk analysis.",
+    "projects.scope3": "Изготвяне на план за имплементация, миграция и възпроизвеждане на интеграции.",
+    "projects.scope4": "Подкрепа при договорни условия, защитаващи интересите на възложителя.",
+    "projects.scope5": "Комуникационна стратегия и роля на main contact point.",
+    "projects.scope6": "Успешна миграция без загуба на данни и потребителски акаунти.",
+    "projects.area1Label": "Jira integrations",
+    "projects.area1Title": "Connected service ecosystem",
+    "projects.area1Item1": "Интеграция с ERP система за управление на акаунти тип Active Directory процеси.",
+    "projects.area1Item2": "Интеграция Jira със ServiceNow за service coordination и visibility.",
+    "projects.area1Item3": "Интеграция Jira - Power BI за operational analytics и reporting.",
+    "projects.area1Item4": "Интеграция Jira - Gemini за AI-supported service workflows.",
+    "projects.area2Label": "ITSM operating model",
+    "projects.area2Title": "High-control Jira service management",
+    "projects.area2Item1": "Високо ниво на Jira governance през проекти, роли и service processes.",
+    "projects.area2Item2": "Структуриране на проекти с ясни цели, задачи, workflows и SLA логика.",
+    "projects.area2Item3": "Стандартизиран канал за подаване на заявки с максимална ефективност.",
+    "projects.area2Item4": "Автоматизации в процесите и комуникацията между екипите.",
+    "projects.area3Label": "AI mini-project",
+    "projects.area3Title": "PDF to Jira field automation",
+    "projects.area3Item1": "Мини проект за изпращане на PDF документи към Gemini за извличане и интерпретация.",
+    "projects.area3Item2": "Автоматично попълване на структурирани Jira полета от съдържанието на документа.",
+    "projects.area3Item3": "Намаляване на ръчното въвеждане и по-добра проследимост на document-based заявки.",
     "projects.quote": "\"Stefan was excellent at managing the migration from their previous tool, handling a complex change process with organisation, clarity, and real attention to detail.\"",
     "education.kicker": "Образование",
+    "education.title": "Хронология на образованието",
     "education.law": "Магистър по Право",
     "education.unwe": "Университет за национално и световно стопанство - София",
     "education.cert": "QA, Relational Databases, Power BI Analytics",
@@ -237,6 +291,22 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: "-42% 0px -48% 0px", threshold: 0.01 });
 
 document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+
+const educationTimeline = document.querySelector(".education-timeline");
+if (educationTimeline) {
+  const educationSteps = [...educationTimeline.querySelectorAll("article")];
+  const setEducationStep = (index) => {
+    educationTimeline.dataset.active = String(index);
+    educationSteps.forEach((step, stepIndex) => {
+      step.classList.toggle("is-active", stepIndex === index);
+    });
+  };
+
+  educationSteps.forEach((step, index) => {
+    step.addEventListener("mouseenter", () => setEducationStep(index));
+    step.addEventListener("focus", () => setEducationStep(index));
+  });
+}
 
 document.querySelectorAll("[data-modal-image]").forEach((trigger) => {
   trigger.addEventListener("click", () => {

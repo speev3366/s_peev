@@ -25,7 +25,7 @@
       <span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#about" data-i18n="nav.about">About me</a>
       <a href="#skills" data-i18n="nav.skills">Skills</a>
       <a href="#experience" data-i18n="nav.experience">Experience</a>
       <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
@@ -53,6 +53,10 @@
         </div>
       </div>
       <div class="hero-visual" aria-label="IT operations dashboard visual">
+        <div class="hero-portrait">
+          <img src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" onerror="this.closest('.hero-portrait').classList.add('is-missing')">
+          <span>@s_peev</span>
+        </div>
         <img src="assets/hero-operations.png" alt="Abstract IT operations dashboard with workflows and service panels">
         <div class="status-card">
           <span data-i18n="hero.cardTitle">Operational Focus</span>
@@ -90,28 +94,38 @@
     </section>
 
     <section class="section about" id="about">
-      <p class="section-kicker" data-i18n="about.kicker">About</p>
-      <div class="section-heading">
-        <h2 data-i18n="about.title">Service reliability through structure, automation and calm coordination.</h2>
-        <p data-i18n="about.copy">
-          I work across business continuity, IT service management and Atlassian Cloud administration, turning operational complexity into clear workflows, useful reporting and repeatable processes.
-        </p>
+      <p class="section-kicker" data-i18n="about.kicker">About me</p>
+      <div class="about-intro">
+        <div>
+          <h2 data-i18n="about.title">I connect operations, people and systems so work moves with less friction.</h2>
+        </div>
+        <div class="about-story">
+          <p data-i18n="about.copy">
+            I am an IT Operations and Service Management professional with hands-on experience in team leadership, project coordination, business continuity, Service Desk and Atlassian Cloud administration.
+          </p>
+          <p data-i18n="about.copy2">
+            My strongest zone is where structure meets execution: designing Jira and JSM workflows, improving SLAs, building automations, creating dashboards, coordinating incidents and helping teams make clearer decisions with better data.
+          </p>
+          <p data-i18n="about.copy3">
+            I like practical solutions: fewer unclear handovers, better ownership, useful reporting and service processes that people can actually follow under pressure.
+          </p>
+        </div>
       </div>
       <div class="about-grid">
         <article>
           <span>01</span>
-          <h3 data-i18n="about.card1Title">Operational Leadership</h3>
-          <p data-i18n="about.card1Text">Team coordination for critical applications, incident priorities, escalations, vendor controls and management reporting.</p>
+          <h3 data-i18n="about.card1Title">Operational calm</h3>
+          <p data-i18n="about.card1Text">Team leadership, incident priorities, escalations and business continuity work handled with structure and clear ownership.</p>
         </article>
         <article>
           <span>02</span>
-          <h3 data-i18n="about.card2Title">Atlassian Cloud</h3>
-          <p data-i18n="about.card2Text">Organization administration for Jira, Jira Service Management and Confluence across large-scale environments.</p>
+          <h3 data-i18n="about.card2Title">Atlassian in scale</h3>
+          <p data-i18n="about.card2Text">Organization administration for Jira, Jira Service Management and Confluence, including permissions, workflows, automations, SLAs, dashboards and apps.</p>
         </article>
         <article>
           <span>03</span>
-          <h3 data-i18n="about.card3Title">Process Delivery</h3>
-          <p data-i18n="about.card3Text">Requirements, workflows, automations, SLAs, dashboards and integrations built around real business needs.</p>
+          <h3 data-i18n="about.card3Title">Practical delivery</h3>
+          <p data-i18n="about.card3Text">Projects delivered with business and technical stakeholders, from requirements and testing to rollout, reporting and continuous improvement.</p>
         </article>
       </div>
     </section>
@@ -234,6 +248,17 @@
             <span data-i18n="projects.stat2">Stakeholder ownership</span>
             <span data-i18n="projects.stat3">End-to-end project management</span>
           </div>
+          <div class="project-scope" aria-label="Project scope">
+            <span data-i18n="projects.scopeLabel">Scope delivered</span>
+            <ul>
+              <li data-i18n="projects.scope1">Assessed the current social communication platform and business needs.</li>
+              <li data-i18n="projects.scope2">Led alternative product research, selection, testing and risk analysis.</li>
+              <li data-i18n="projects.scope3">Prepared implementation, migration and integration reproduction plans.</li>
+              <li data-i18n="projects.scope4">Supported contract alignment to protect the client's interests.</li>
+              <li data-i18n="projects.scope5">Built the communication strategy and acted as main contact point.</li>
+              <li data-i18n="projects.scope6">Delivered a successful migration with no loss of data or user accounts.</li>
+            </ul>
+          </div>
         </div>
         <figure class="recommendation-card">
           <button class="recommendation-image" type="button" data-modal-image="assets/recommendation-humand-cropped.jpg" data-modal-title="LinkedIn recommendation">
@@ -244,6 +269,37 @@
             <span>Cinzia Soro | Humand</span>
           </figcaption>
         </figure>
+      </div>
+      <div class="project-portfolio" aria-label="Additional project areas">
+        <article class="project-area">
+          <span data-i18n="projects.area1Label">Jira integrations</span>
+          <h3 data-i18n="projects.area1Title">Connected service ecosystem</h3>
+          <ul>
+            <li data-i18n="projects.area1Item1">ERP integration for account management similar to Active Directory processes.</li>
+            <li data-i18n="projects.area1Item2">Jira integration with ServiceNow for service coordination and visibility.</li>
+            <li data-i18n="projects.area1Item3">Jira and Power BI integration for operational analytics and reporting.</li>
+            <li data-i18n="projects.area1Item4">Jira and Gemini integration for AI-supported service workflows.</li>
+          </ul>
+        </article>
+        <article class="project-area featured-area">
+          <span data-i18n="projects.area2Label">ITSM operating model</span>
+          <h3 data-i18n="projects.area2Title">High-control Jira service management</h3>
+          <ul>
+            <li data-i18n="projects.area2Item1">High-level Jira governance across projects, roles and service processes.</li>
+            <li data-i18n="projects.area2Item2">Structured projects with clear goals, tasks, workflows and SLA logic.</li>
+            <li data-i18n="projects.area2Item3">Standardized request channel designed for maximum handling efficiency.</li>
+            <li data-i18n="projects.area2Item4">Automations across process steps and cross-team communication.</li>
+          </ul>
+        </article>
+        <article class="project-area">
+          <span data-i18n="projects.area3Label">AI mini-project</span>
+          <h3 data-i18n="projects.area3Title">PDF to Jira field automation</h3>
+          <ul>
+            <li data-i18n="projects.area3Item1">Mini-project for sending PDF documents to Gemini for extraction and interpretation.</li>
+            <li data-i18n="projects.area3Item2">Automatic population of structured Jira fields from document content.</li>
+            <li data-i18n="projects.area3Item3">Reduced manual entry and improved traceability for document-based requests.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -267,21 +323,24 @@
 
     <section class="section education">
       <p class="section-kicker" data-i18n="education.kicker">Education</p>
-      <div class="education-grid">
-        <article>
+      <div class="section-heading compact">
+        <h2 data-i18n="education.title">Education timeline</h2>
+      </div>
+      <div class="education-timeline" data-active="0" aria-label="Education timeline">
+        <article tabindex="0">
+          <time>2010 - 2015</time>
+          <h3 data-i18n="education.school">High School of Mathematics "Baba Tonka" Ruse</h3>
+          <p data-i18n="education.focus">Analytical foundation</p>
+        </article>
+        <article tabindex="0">
           <time>2015 - 2021</time>
           <h3 data-i18n="education.law">Master's Degree in Law</h3>
           <p data-i18n="education.unwe">University of National and World Economy - Sofia</p>
         </article>
-        <article>
+        <article tabindex="0">
           <time>2022 - 2023</time>
           <h3 data-i18n="education.cert">QA, Relational Databases, Power BI Analytics</h3>
           <p data-i18n="education.training">Professional certification</p>
-        </article>
-        <article>
-          <time>2010 - 2015</time>
-          <h3 data-i18n="education.school">High School of Mathematics "Baba Tonka" Ruse</h3>
-          <p data-i18n="education.focus">Analytical foundation</p>
         </article>
       </div>
     </section>
