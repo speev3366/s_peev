@@ -645,8 +645,8 @@ time {
 .education-timeline::after {
   content: "";
   position: absolute;
-  left: calc(16.666% + 18px);
-  right: calc(16.666% + 18px);
+  left: 42px;
+  right: 42px;
   top: 20px;
   height: 2px;
   border-radius: 999px;
@@ -657,7 +657,7 @@ time {
 }
 
 .education-timeline::after {
-  width: calc(33.333% * var(--active-step));
+  width: 0;
   right: auto;
   background: linear-gradient(90deg, var(--teal), var(--blue));
   box-shadow: 0 0 28px rgba(37, 99, 235, 0.2);
@@ -671,11 +671,25 @@ time {
   --active-step: 1;
 }
 
+.education-timeline:has(article:nth-child(2):hover)::after,
+.education-timeline:has(article:nth-child(2):focus-within)::after,
+.education-timeline:has(article:nth-child(2):focus)::after,
+.education-timeline[data-active="1"]::after {
+  width: calc((100% - 84px) / 2);
+}
+
 .education-timeline:has(article:nth-child(3):hover),
 .education-timeline:has(article:nth-child(3):focus-within),
 .education-timeline:has(article:nth-child(3):focus),
 .education-timeline[data-active="2"] {
   --active-step: 2;
+}
+
+.education-timeline:has(article:nth-child(3):hover)::after,
+.education-timeline:has(article:nth-child(3):focus-within)::after,
+.education-timeline:has(article:nth-child(3):focus)::after,
+.education-timeline[data-active="2"]::after {
+  width: calc(100% - 84px);
 }
 
 .education-timeline article {
@@ -764,6 +778,22 @@ time {
 .certifications .section-kicker,
 .certifications .section-heading p {
   color: var(--mint);
+}
+
+.certifications .section-heading {
+  display: block;
+  max-width: 1180px;
+}
+
+.certifications .section-heading h2 {
+  white-space: nowrap;
+  font-size: clamp(2.7rem, 5.1vw, 5.55rem);
+}
+
+.certifications .section-heading p {
+  max-width: 760px;
+  margin-top: 18px;
+  font-size: 1.08rem;
 }
 
 .cert-grid {
@@ -1327,6 +1357,11 @@ footer {
   .education-timeline article::before {
     top: 28px;
     left: -34px;
+  }
+
+  .certifications .section-heading h2 {
+    white-space: normal;
+    font-size: clamp(2.2rem, 10vw, 4.4rem);
   }
 
   .signal-strip {
