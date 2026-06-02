@@ -782,12 +782,14 @@ time {
 
 .certifications .section-heading {
   display: block;
-  max-width: 1180px;
+  max-width: 1320px;
 }
 
 .certifications .section-heading h2 {
-  white-space: nowrap;
-  font-size: clamp(2.7rem, 5.1vw, 5.55rem);
+  max-width: 25ch;
+  font-size: clamp(2.45rem, 4.45vw, 4.95rem);
+  line-height: 1.02;
+  text-wrap: balance;
 }
 
 .certifications .section-heading p {
