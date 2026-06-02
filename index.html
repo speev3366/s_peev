@@ -41,8 +41,19 @@
     <section class="hero" id="home">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="hero.eyebrow">Hi, I am</p>
-        <h1>Stefan Peev</h1>
-        <p class="role" data-i18n="hero.role">Team Lead | Atlassian Administrator | Project Management</p>
+        <div class="hero-identity">
+          <img class="name-avatar" src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" onerror="this.classList.add('is-missing')">
+          <h1>Stefan Peev</h1>
+        </div>
+        <div class="role-switcher" aria-label="Team Lead | Business continuity | Atlassian Administrator | Project Management">
+          <span class="role-label">Focus</span>
+          <span class="role-window" aria-hidden="true">
+            <span style="--i: 0">Team Lead</span>
+            <span style="--i: 1">Business continuity</span>
+            <span style="--i: 2">Atlassian Administrator</span>
+            <span style="--i: 3">Project Management</span>
+          </span>
+        </div>
         <p class="hero-text" data-i18n="hero.text">
           IT Operations and Service Management professional focused on reliable services, clear processes and automation-supported delivery.
         </p>
@@ -53,10 +64,6 @@
         </div>
       </div>
       <div class="hero-visual" aria-label="IT operations dashboard visual">
-        <div class="hero-portrait">
-          <img src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" onerror="this.closest('.hero-portrait').classList.add('is-missing')">
-          <span>@s_peev</span>
-        </div>
         <img src="assets/hero-operations.png" alt="Abstract IT operations dashboard with workflows and service panels">
         <div class="status-card">
           <span data-i18n="hero.cardTitle">Operational Focus</span>
