@@ -1041,6 +1041,158 @@ time {
   background: #f7f8f6;
 }
 
+.memory-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.68fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 165, 233, 0.18);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 72% 20%, rgba(14, 165, 233, 0.18), transparent 30%),
+    linear-gradient(135deg, rgba(7, 21, 18, 0.98), rgba(13, 31, 32, 0.94) 48%, rgba(17, 24, 39, 0.96)),
+    var(--surface-3);
+  color: white;
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.18);
+}
+
+.memory-copy {
+  padding: clamp(28px, 5vw, 52px);
+}
+
+.memory-copy h2 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.memory-copy p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1.08rem;
+}
+
+.memory-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.memory-actions span {
+  color: var(--mint);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.memory-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.memory-points span {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(125, 211, 199, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.055);
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 800;
+}
+
+.memory-visual {
+  position: relative;
+  min-height: 430px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(rgba(125, 211, 199, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 199, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.memory-visual::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(125, 211, 199, 0.16);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.16), transparent 58%);
+}
+
+.memory-board {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(72px, 1fr));
+  gap: 10px;
+  width: min(330px, 78%);
+  transform: rotate(-4deg);
+}
+
+.memory-board span {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(125, 211, 199, 0.22);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04)),
+    rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 950;
+}
+
+.memory-board .is-open {
+  background: linear-gradient(145deg, rgba(37, 99, 235, 0.9), rgba(14, 165, 233, 0.72));
+}
+
+.memory-board .is-match {
+  background: linear-gradient(145deg, rgba(15, 118, 110, 0.95), rgba(125, 211, 199, 0.7));
+}
+
+.memory-panel {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  max-width: 250px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(7, 21, 18, 0.76);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18px);
+}
+
+.memory-panel span,
+.memory-panel small {
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.memory-panel strong {
+  display: block;
+  margin: 4px 0;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
 .project-shell {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1fr);
@@ -1463,8 +1615,19 @@ footer {
   .expertise-grid,
   .education-grid,
   .cert-grid,
+  .memory-project,
   .project-shell,
   .project-portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-visual {
+    min-height: 340px;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .memory-points {
     grid-template-columns: 1fr;
   }
 
@@ -1571,6 +1734,18 @@ footer {
 
   .signal-strip span:last-child {
     border-bottom: 0;
+  }
+
+  .memory-board {
+    width: min(280px, 82%);
+    grid-template-columns: repeat(3, minmax(58px, 1fr));
+  }
+
+  .memory-panel {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    max-width: none;
   }
 
   .media-modal iframe {

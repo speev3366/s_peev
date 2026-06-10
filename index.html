@@ -17,10 +17,10 @@
 </head>
 <body>
   <canvas class="mesh-background" id="meshBackground" aria-hidden="true"></canvas>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <nav class="navbar" id="navbar" aria-label="Primary navigation">
-    <a class="logo" href="#home" aria-label="Stefan Peev home">@s_peev</a>
-    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
+  <nav class="navbar" id="navbar" aria-label="Primary navigation" data-i18n-aria-label="nav.aria">
+    <a class="logo" href="#home" aria-label="Stefan Peev home" data-i18n-aria-label="nav.logoAria">@s_peev</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-i18n-aria-label="nav.menuAria" aria-expanded="false">
       <span></span>
       <span></span>
     </button>
@@ -32,8 +32,8 @@
       <a href="#projects" data-i18n="nav.projects">Projects</a>
       <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
-      <a class="nav-cv" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n="nav.cv">CV</a>
-      <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">BG</button>
+      <a class="nav-cv" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n-modal-title="modal.cvTitle" data-i18n="nav.cv">CV</a>
+      <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language" data-i18n-aria-label="nav.langAria">BG</button>
     </div>
   </nav>
 
@@ -42,16 +42,16 @@
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="hero.eyebrow">Hi, I am</p>
         <div class="hero-identity">
-          <img class="name-avatar" src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" onerror="this.classList.add('is-missing')">
-          <h1>Stefan Peev</h1>
+          <img class="name-avatar" src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" data-i18n-alt="hero.avatarAlt" onerror="this.classList.add('is-missing')">
+          <h1 data-i18n="hero.name">Stefan Peev</h1>
         </div>
-        <div class="role-switcher" aria-label="Team Lead | Business continuity | Atlassian Administrator | Project Management">
-          <span class="role-label">Focus</span>
+        <div class="role-switcher" aria-label="Team Lead | Business continuity | Atlassian Administrator | Project Management" data-i18n-aria-label="hero.rolesAria">
+          <span class="role-label" data-i18n="hero.roleLabel">Focus</span>
           <span class="role-window" aria-hidden="true">
-            <span style="--i: 0">Team Lead</span>
-            <span style="--i: 1">Business continuity</span>
-            <span style="--i: 2">Atlassian Administrator</span>
-            <span style="--i: 3">Project Management</span>
+            <span style="--i: 0" data-i18n="hero.role1">Team Lead</span>
+            <span style="--i: 1" data-i18n="hero.role2">Business continuity</span>
+            <span style="--i: 2" data-i18n="hero.role3">Atlassian Administrator</span>
+            <span style="--i: 3" data-i18n="hero.role4">Project Management</span>
           </span>
         </div>
         <p class="hero-text" data-i18n="hero.text">
@@ -60,14 +60,14 @@
         <div class="hero-actions">
           <a class="btn primary" href="#experience" data-i18n="hero.work">View Experience</a>
           <a class="btn secondary" href="#contact" data-i18n="hero.contact">Get in Touch</a>
-          <a class="btn ghost" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n="hero.cv">View CV</a>
+          <a class="btn ghost" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n-modal-title="modal.cvTitle" data-i18n="hero.cv">View CV</a>
         </div>
       </div>
       <div class="hero-visual" aria-label="IT operations dashboard visual">
         <img src="assets/hero-operations.png" alt="Abstract IT operations dashboard with workflows and service panels">
         <div class="status-card">
           <span data-i18n="hero.cardTitle">Operational Focus</span>
-          <strong>50+ apps</strong>
+          <strong data-i18n="hero.apps">50+ apps</strong>
           <small data-i18n="hero.cardText">continuity, incidents, SLAs and reporting</small>
         </div>
       </div>
@@ -92,12 +92,12 @@
     </section>
 
     <section class="signal-strip" aria-label="Professional focus areas">
-      <span>ITSM</span>
-      <span>Atlassian Cloud</span>
-      <span>Business Continuity</span>
-      <span>Automation</span>
-      <span>Power BI</span>
-      <span>Stakeholder Delivery</span>
+      <span data-i18n="signal.itsm">ITSM</span>
+      <span data-i18n="signal.atlassian">Atlassian Cloud</span>
+      <span data-i18n="signal.continuity">Business Continuity</span>
+      <span data-i18n="signal.automation">Automation</span>
+      <span data-i18n="signal.powerbi">Power BI</span>
+      <span data-i18n="signal.delivery">Stakeholder Delivery</span>
     </section>
 
     <section class="section about" id="about">
@@ -143,17 +143,17 @@
         <h2 data-i18n="skills.title">Core capabilities</h2>
       </div>
       <div class="skill-cloud">
-        <span>Team Leadership</span>
-        <span>Project Management</span>
-        <span>IT Service Management</span>
-        <span>Business Continuity</span>
-        <span>Incident Management</span>
-        <span>SLA Management</span>
-        <span>Process Documentation</span>
-        <span>Automation</span>
-        <span>Dashboards</span>
-        <span>Power BI</span>
-        <span>AI-supported Solutions</span>
+        <span data-i18n="skills.item1">Team Leadership</span>
+        <span data-i18n="skills.item2">Project Management</span>
+        <span data-i18n="skills.item3">IT Service Management</span>
+        <span data-i18n="skills.item4">Business Continuity</span>
+        <span data-i18n="skills.item5">Incident Management</span>
+        <span data-i18n="skills.item6">SLA Management</span>
+        <span data-i18n="skills.item7">Process Documentation</span>
+        <span data-i18n="skills.item8">Automation</span>
+        <span data-i18n="skills.item9">Dashboards</span>
+        <span data-i18n="skills.item10">Power BI</span>
+        <span data-i18n="skills.item11">AI-supported Solutions</span>
         <span>Jira</span>
         <span>Jira Service Management</span>
         <span>Confluence</span>
@@ -167,10 +167,10 @@
       </div>
       <div class="timeline-list">
         <article>
-          <time>Apr 2024 - Feb 2026</time>
+          <time data-i18n="experience.date1">Apr 2024 - Feb 2026</time>
           <div>
             <h3 data-i18n="experience.role1">Business Continuity Team Lead</h3>
-            <p>Econt Express AD</p>
+            <p data-i18n="experience.company1">Econt Express AD</p>
             <ul>
               <li data-i18n="experience.role1a">Led operational coordination for 50+ business-critical applications, ERP systems and server infrastructure.</li>
               <li data-i18n="experience.role1b">Managed incidents, escalations, service risks and reporting for management visibility.</li>
@@ -179,10 +179,10 @@
           </div>
         </article>
         <article>
-          <time>May 2022 - Apr 2024</time>
+          <time data-i18n="experience.date2">May 2022 - Apr 2024</time>
           <div>
             <h3 data-i18n="experience.role2">Atlassian Administrator</h3>
-            <p>Econt Express AD</p>
+            <p data-i18n="experience.company1">Econt Express AD</p>
             <ul>
               <li data-i18n="experience.role2a">Administered Jira, JSM and Confluence Cloud for 50+ projects and 4,700+ users.</li>
               <li data-i18n="experience.role2b">Designed ITSM-aligned workflows, request types, forms, permissions, approvals, SLAs and automations.</li>
@@ -191,10 +191,10 @@
           </div>
         </article>
         <article>
-          <time>May 2019 - Mar 2020</time>
+          <time data-i18n="experience.date3">May 2019 - Mar 2020</time>
           <div>
             <h3 data-i18n="experience.role3">Legal Assistant</h3>
-            <p>UniCredit Bulbank</p>
+            <p data-i18n="experience.company3">UniCredit Bulbank</p>
             <ul>
               <li data-i18n="experience.role3a">Supported documentation, compliance-related tasks, internal coordination and professional communication.</li>
             </ul>
@@ -245,6 +245,43 @@
 
     <section class="section projects" id="projects">
       <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+      <article class="memory-project">
+        <div class="memory-copy">
+          <span class="project-label" data-i18n="memory.label">Personal product build</span>
+          <h2 data-i18n="memory.title">Memory Duel - online memory game</h2>
+          <p data-i18n="memory.copy">
+            A fully owned and delivered browser game project: from product idea, UX flow and gameplay logic to online rooms, authentication, ranking and deployment.
+          </p>
+          <div class="memory-actions">
+            <a class="btn primary" href="https://speev3366.github.io/MemoryGame/" target="_blank" rel="noreferrer" data-i18n="memory.cta">Open live project</a>
+            <span data-i18n="memory.owner">100% owned and implemented by Stefan Peev</span>
+          </div>
+          <div class="memory-points">
+            <span data-i18n="memory.point1">Local, AI and online multiplayer modes</span>
+            <span data-i18n="memory.point2">Supabase Auth, PostgreSQL, Realtime and RPC logic</span>
+            <span data-i18n="memory.point3">Ranking, match history, rooms, invite links and protected flows</span>
+            <span data-i18n="memory.point4">Responsive browser experience for desktop and mobile</span>
+          </div>
+        </div>
+        <div class="memory-visual" aria-label="Memory Duel project preview" data-i18n-aria-label="memory.visualAria">
+          <div class="memory-board" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span class="is-open">AI</span>
+            <span></span>
+            <span class="is-match">40</span>
+            <span></span>
+            <span></span>
+            <span class="is-open">RT</span>
+            <span></span>
+          </div>
+          <div class="memory-panel">
+            <span data-i18n="memory.panelMode">Realtime duel</span>
+            <strong>20 / 30 / 40</strong>
+            <small data-i18n="memory.panelText">cards, rank, rooms and match history</small>
+          </div>
+        </div>
+      </article>
       <div class="project-shell">
         <div class="project-copy">
           <span class="project-label" data-i18n="projects.label">Project signal</span>
@@ -367,12 +404,12 @@
   </main>
 
   <footer>
-    <span>Stefan Peev</span>
+    <span data-i18n="hero.name">Stefan Peev</span>
     <span data-i18n="footer.text">IT Operations | Atlassian Cloud | Business Continuity</span>
   </footer>
 
-  <dialog class="media-modal" id="mediaModal" aria-label="Document preview">
-    <button class="modal-close" type="button" aria-label="Close preview">Close</button>
+  <dialog class="media-modal" id="mediaModal" aria-label="Document preview" data-i18n-aria-label="modal.aria">
+    <button class="modal-close" type="button" aria-label="Close preview" data-i18n-aria-label="modal.closeAria" data-i18n="modal.close">Close</button>
     <img id="modalImage" alt="">
     <iframe id="modalFrame" title="PDF preview"></iframe>
     <p id="modalTitle"></p>
