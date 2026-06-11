@@ -321,10 +321,19 @@ img {
 .section-kicker {
   margin: 0 0 12px;
   color: var(--teal);
-  font-size: 0.78rem;
   font-weight: 850;
-  letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+}
+
+.section-kicker {
+  font-size: clamp(0.92rem, 0.95vw, 1.06rem);
+  font-weight: 950;
+  letter-spacing: 0.18em;
 }
 
 h1,
@@ -776,6 +785,7 @@ time {
 .education-timeline::after {
   content: "";
   position: absolute;
+  display: none;
   left: 42px;
   right: 42px;
   top: 20px;
@@ -837,9 +847,44 @@ time {
   transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease, background 260ms ease;
 }
 
+.education-timeline article::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -35px;
+  left: 70px;
+  width: calc(100% - 34px);
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.16);
+  pointer-events: none;
+  transition: background 260ms ease, box-shadow 260ms ease;
+}
+
+.education-timeline article:last-child::after {
+  display: none;
+}
+
+.education-timeline:has(article:nth-child(2):hover) article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(2):focus-within) article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(2):focus) article:nth-child(1)::after,
+.education-timeline[data-active="1"] article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(3):hover) article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(3):focus-within) article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(3):focus) article:nth-child(1)::after,
+.education-timeline:has(article:nth-child(3):hover) article:nth-child(2)::after,
+.education-timeline:has(article:nth-child(3):focus-within) article:nth-child(2)::after,
+.education-timeline:has(article:nth-child(3):focus) article:nth-child(2)::after,
+.education-timeline[data-active="2"] article:nth-child(1)::after,
+.education-timeline[data-active="2"] article:nth-child(2)::after {
+  background: linear-gradient(90deg, var(--teal), var(--blue));
+  box-shadow: 0 0 24px rgba(37, 99, 235, 0.18);
+}
+
 .education-timeline article::before {
   content: "";
   position: absolute;
+  z-index: 1;
   top: -43px;
   left: 28px;
   width: 18px;
@@ -1638,6 +1683,7 @@ footer {
   }
 
   .education-timeline::before {
+    display: block;
     left: 9px;
     right: auto;
     top: 0;
@@ -1647,6 +1693,10 @@ footer {
   }
 
   .education-timeline::after {
+    display: none;
+  }
+
+  .education-timeline article::after {
     display: none;
   }
 
