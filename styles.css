@@ -116,7 +116,7 @@ img {
 
 @keyframes metricSpotlight {
   0%,
-  13% {
+  3.45% {
     --metric-label: rgba(255, 255, 255, 0.84);
     --metric-value: #ffffff;
     background:
@@ -125,7 +125,7 @@ img {
     box-shadow: 0 18px 42px rgba(37, 99, 235, 0.2);
   }
 
-  18%,
+  4.18%,
   100% {
     --metric-label: var(--teal-dark);
     --metric-value: var(--ink);
@@ -270,8 +270,8 @@ img {
 .hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1fr);
-  gap: clamp(18px, 3.2vw, 46px);
+  grid-template-columns: minmax(0, 0.94fr) minmax(420px, 1fr);
+  gap: clamp(18px, 2.7vw, 38px);
   align-items: stretch;
   padding: 134px clamp(18px, 5vw, 64px) 54px;
   position: relative;
@@ -315,7 +315,7 @@ img {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .services-panel {
@@ -380,6 +380,7 @@ img {
 }
 
 .services-grid span {
+  --metric-value: var(--teal-dark);
   min-height: 42px;
   display: flex;
   align-items: center;
@@ -387,11 +388,12 @@ img {
   border: 1px solid rgba(15, 118, 110, 0.13);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.68);
-  color: var(--teal-dark);
+  color: var(--metric-value);
   font-size: clamp(0.82rem, 0.92vw, 0.95rem);
   font-weight: 850;
   line-height: 1.15;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+  animation: metricSpotlight 36s ease-in-out infinite;
 }
 
 .hero-identity {
@@ -525,7 +527,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 14px;
+  margin-bottom: 16px;
 }
 
 .btn {
@@ -697,10 +700,11 @@ h1 {
 .hero-copy .impact-board {
   align-self: auto;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: minmax(176px, 1fr) repeat(2, minmax(78px, auto));
-  gap: 10px;
-  max-width: 620px;
-  min-height: clamp(360px, 39vh, 430px);
+  grid-template-rows: minmax(190px, 1fr) repeat(2, minmax(88px, auto));
+  gap: 9px;
+  width: min(100%, 710px);
+  max-width: 710px;
+  min-height: clamp(380px, 40vh, 440px);
   margin-top: auto;
   padding: 16px;
   border: 1px solid rgba(15, 118, 110, 0.12);
@@ -714,20 +718,22 @@ h1 {
   --metric-label: var(--teal-dark);
   --metric-value: var(--ink);
   z-index: 1;
-  align-content: end;
-  min-height: 78px;
-  padding: 12px;
+  align-content: center;
+  min-height: 88px;
+  padding: 12px 14px;
   background:
     linear-gradient(150deg, rgba(255, 255, 255, 0.86), rgba(240, 249, 255, 0.72)),
     rgba(255, 255, 255, 0.66);
   box-shadow: 0 14px 36px rgba(15, 23, 42, 0.1);
   color: var(--metric-value);
-  animation: metricSpotlight 18s ease-in-out infinite;
+  animation: metricSpotlight 36s ease-in-out infinite;
 }
 
 .hero-copy .impact-card strong {
   color: var(--metric-value);
-  font-size: clamp(1.62rem, 2.65vw, 2.55rem);
+  margin-bottom: 7px;
+  font-size: clamp(1.4rem, 2.05vw, 2.06rem);
+  line-height: 0.95;
 }
 
 .hero-copy .primary-impact {
@@ -742,6 +748,9 @@ h1 {
 
 .hero-copy .impact-card span {
   color: var(--metric-label);
+  min-height: 2.28em;
+  font-size: clamp(0.6rem, 0.72vw, 0.7rem);
+  line-height: 1.18;
 }
 
 .hero-copy .impact-card:nth-of-type(1) {
@@ -749,38 +758,95 @@ h1 {
 }
 
 .hero-copy .impact-card:nth-of-type(2) {
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 .hero-copy .impact-card:nth-of-type(3) {
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 
 .hero-copy .impact-card:nth-of-type(4) {
-  animation-delay: 9s;
+  animation-delay: 4.5s;
 }
 
 .hero-copy .impact-card:nth-of-type(5) {
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 
 .hero-copy .impact-card:nth-of-type(6) {
+  animation-delay: 7.5s;
+}
+
+.services-grid span:nth-child(1) {
+  animation-delay: 9s;
+}
+
+.services-grid span:nth-child(2) {
+  animation-delay: 10.5s;
+}
+
+.services-grid span:nth-child(3) {
+  animation-delay: 12s;
+}
+
+.services-grid span:nth-child(4) {
+  animation-delay: 13.5s;
+}
+
+.services-grid span:nth-child(5) {
   animation-delay: 15s;
 }
 
-.hero-copy .impact-board:hover .impact-card {
-  animation-play-state: paused;
+.services-grid span:nth-child(6) {
+  animation-delay: 16.5s;
 }
 
-.hero-copy .impact-card:hover,
-.hero-copy .impact-card:focus-within {
-  --metric-label: rgba(255, 255, 255, 0.84);
-  --metric-value: #ffffff;
-  animation: none;
-  background:
-    linear-gradient(150deg, rgba(15, 118, 110, 0.92), rgba(37, 99, 235, 0.78)),
-    var(--teal-dark);
-  box-shadow: 0 18px 42px rgba(37, 99, 235, 0.2);
+.services-grid span:nth-child(7) {
+  animation-delay: 18s;
+}
+
+.services-grid span:nth-child(8) {
+  animation-delay: 19.5s;
+}
+
+.services-grid span:nth-child(9) {
+  animation-delay: 21s;
+}
+
+.services-grid span:nth-child(10) {
+  animation-delay: 22.5s;
+}
+
+.services-grid span:nth-child(11) {
+  animation-delay: 24s;
+}
+
+.services-grid span:nth-child(12) {
+  animation-delay: 25.5s;
+}
+
+.services-grid span:nth-child(13) {
+  animation-delay: 27s;
+}
+
+.services-grid span:nth-child(14) {
+  animation-delay: 28.5s;
+}
+
+.services-grid span:nth-child(15) {
+  animation-delay: 30s;
+}
+
+.services-grid span:nth-child(16) {
+  animation-delay: 31.5s;
+}
+
+.services-grid span:nth-child(17) {
+  animation-delay: 33s;
+}
+
+.services-grid span:nth-child(18) {
+  animation-delay: 34.5s;
 }
 
 .hero-copy .impact-card:nth-of-type(1) {
@@ -831,9 +897,10 @@ h1 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(238, 251, 255, 0.36) 54%, rgba(238, 251, 255, 0.58)),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.12) 58%),
-    radial-gradient(circle at 84% 20%, rgba(14, 165, 233, 0.16), transparent 36%);
+    linear-gradient(180deg, rgba(2, 6, 23, 0.12), rgba(8, 47, 73, 0.32) 50%, rgba(238, 251, 255, 0.74)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), rgba(15, 23, 42, 0.08) 58%),
+    radial-gradient(circle at 84% 20%, rgba(14, 165, 233, 0.2), transparent 36%);
+  backdrop-filter: blur(1.5px);
 }
 
 .impact-backdrop img {
@@ -841,25 +908,32 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(0.98) contrast(0.98);
+  filter: saturate(0.95) contrast(0.94) brightness(0.88);
 }
 
 .impact-backdrop .status-card {
   z-index: 1;
   display: block;
   left: 16px;
-  top: 10px;
+  top: 14px;
   bottom: auto;
-  max-width: 205px;
-  padding: 12px 13px;
+  max-width: min(340px, calc(100% - 32px));
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
 }
 
-.impact-backdrop .status-card strong {
-  font-size: 1.45rem;
+.impact-backdrop .status-card span {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .impact-backdrop .status-card small {
-  font-size: 0.82rem;
+  margin-top: 6px;
+  color: var(--teal-dark);
+  font-size: 0.88rem;
+  font-weight: 850;
   line-height: 1.35;
 }
 
@@ -1607,9 +1681,136 @@ time {
   box-shadow: 0 0 0 5px rgba(15, 118, 110, 0.09);
 }
 
+.ai-projects {
+  margin-top: 26px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid rgba(14, 165, 233, 0.16);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 86% 14%, rgba(37, 99, 235, 0.12), transparent 32%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(240, 249, 255, 0.62));
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.07);
+}
+
+.ai-projects .section-heading {
+  margin-bottom: 24px;
+}
+
+.ai-projects .section-heading h2 {
+  max-width: 1120px;
+  font-size: clamp(1.85rem, 3vw, 3.25rem);
+  text-wrap: balance;
+}
+
+.ai-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ai-project-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(24px, 3.2vw, 34px);
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(240, 253, 250, 0.7)),
+    var(--surface);
+  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.08);
+}
+
+.ai-project-card::before {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 172px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(14, 165, 233, 0.16);
+  border-radius: 50%;
+  background: rgba(14, 165, 233, 0.08);
+}
+
+.ai-project-card > * {
+  position: relative;
+}
+
+.ai-project-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+  line-height: 0.98;
+}
+
+.ai-project-subtitle {
+  margin: 12px 0 16px;
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.ai-project-card p:not(.ai-project-subtitle) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.ai-project-card ul {
+  display: grid;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 24px 0 0;
+  list-style: none;
+}
+
+.ai-project-card li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--muted);
+}
+
+.ai-project-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.68em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 5px rgba(15, 118, 110, 0.09);
+}
+
+.ai-project-card.accent-card {
+  background:
+    radial-gradient(circle at 88% 14%, rgba(125, 211, 199, 0.18), transparent 32%),
+    linear-gradient(150deg, rgba(15, 118, 110, 0.96), rgba(37, 99, 235, 0.76)),
+    var(--teal-dark);
+  color: white;
+}
+
+.ai-project-card.accent-card h3,
+.ai-project-card.accent-card .ai-project-subtitle {
+  color: white;
+}
+
+.ai-project-card.accent-card p,
+.ai-project-card.accent-card li,
+.ai-project-card.accent-card .project-label {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.ai-project-card.accent-card li::before {
+  background: white;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.12);
+}
+
 .project-portfolio {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 24px;
 }
@@ -1970,6 +2171,7 @@ footer {
   .expertise-grid,
   .education-grid,
   .cert-grid,
+  .ai-project-grid,
   .memory-project,
   .project-shell,
   .project-portfolio {
