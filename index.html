@@ -1,474 +1,486 @@
-<!doctype html>
-<html lang="bg">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Пекарна Еклерия във Варна - специализирана пекарна за еклери по оригинална рецепта, закуски и поръчки.">
-    <meta name="theme-color" content="#231711">
-    <title>Пекарна Еклерия | Варна</title>
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stefan Peev - IT Operations & Atlassian Administrator</title>
+  <meta name="description" content="Portfolio of Stefan Peev, IT Operations and Service Management professional specializing in Atlassian Cloud, business continuity, automation and project delivery.">
+  <meta name="keywords" content="Stefan Peev, Atlassian Administrator, Jira Service Management, Business Continuity, IT Operations, Service Desk, Project Management">
+  <meta name="author" content="Stefan Peev">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stefan Peev - IT Operations & Atlassian Administrator">
+  <meta property="og:description" content="Team Lead, Atlassian Administrator and IT Service Management professional.">
+  <meta property="og:image" content="assets/hero-operations.png">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas class="mesh-background" id="meshBackground" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
+  <nav class="navbar" id="navbar" aria-label="Primary navigation" data-i18n-aria-label="nav.aria">
+    <a class="logo" href="#home" aria-label="Stefan Peev home" data-i18n-aria-label="nav.logoAria">@s_peev</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" data-i18n-aria-label="nav.menuAria" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">About me</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="nav-cv" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n-modal-title="modal.cvTitle" data-i18n="nav.cv">CV</a>
+      <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language" data-i18n-aria-label="nav.langAria">BG</button>
+    </div>
+  </nav>
 
-    <!-- Icons -->
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
-    <!-- Open Graph / social sharing.
-         NOTE: og:image / og:url use relative paths. When the live domain is known,
-         prefix them with the absolute URL (e.g. https://example.com/) for reliable previews. -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Пекарна Еклерия">
-    <meta property="og:title" content="Пекарна Еклерия | Варна">
-    <meta property="og:description" content="Специализирана пекарна за еклери по оригинална рецепта във Варна - крем, фина глазура и ежедневна свежест.">
-    <meta property="og:url" content="https://speev3366.github.io/Ekleria/">
-    <meta property="og:image" content="https://speev3366.github.io/Ekleria/assets/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="bg_BG">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Пекарна Еклерия | Варна">
-    <meta name="twitter:description" content="Специализирана пекарна за еклери по оригинална рецепта във Варна.">
-    <meta name="twitter:image" content="https://speev3366.github.io/Ekleria/assets/og-image.jpg">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Bakery",
-      "name": "Пекарна Еклерия",
-      "description": "Специализирана пекарна за еклери по оригинална рецепта във Варна.",
-      "image": "assets/og-image.jpg",
-      "telephone": "+359895646009",
-      "email": "ekleria@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "ул. Под Игото 58",
-        "addressLocality": "Варна",
-        "addressCountry": "BG"
-      },
-      "servesCuisine": "Bakery, Pastry",
-      "priceRange": "$$",
-      "sameAs": [
-        "https://www.instagram.com/pekarnaekleria/",
-        "https://www.facebook.com/profile.php?id=61581988955698"
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "06:00",
-          "closes": "16:30"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "06:00",
-          "closes": "14:00"
-        }
-      ]
-    }
-    </script>
-  </head>
-  <body>
-    <div class="grain" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Еклерия">
-        <img src="assets/images/logo-wall-header.png" alt="Лого на Пекарна Еклерия">
-        <span>Еклерия</span>
-      </a>
-      <nav class="nav" aria-label="Основна навигация">
-        <a href="#story" data-i18n="nav.story">История</a>
-        <a href="#selection" data-i18n="nav.selection">Селекция</a>
-        <div class="nav-item">
-          <a href="#products" data-i18n="nav.products">Продукти</a>
-          <div class="nav-dropdown product-nav-menu" aria-label="Продуктови категории">
-            <div class="nav-subitem">
-              <a href="#eclairs" data-i18n="productCats.eclairs">Еклери</a>
-              <div class="nav-submenu" aria-label="Видове еклери">
-                <a href="#eclairs" data-product-target="0" data-i18n="caramel.title">Карамел</a>
-                <a href="#eclairs" data-product-target="1" data-i18n="flavor.pistachio.title">Шам фъстък</a>
-                <a href="#eclairs" data-product-target="2" data-i18n="flavor.white.title">Бял шоколад</a>
-                <a href="#eclairs" data-product-target="3" data-i18n="flavor.dark.title">Тъмен шоколад</a>
-                <a href="#eclairs" data-product-target="4" data-i18n="flavor.charcoal.title">Активен въглен</a>
-              </div>
-            </div>
-            <div class="nav-subitem">
-              <a href="#eclairs" data-product-target="5" data-i18n="productCats.order">Поръчкови</a>
-              <div class="nav-submenu" aria-label="Поръчкови продукти">
-                <a href="#eclairs" data-product-target="5" data-i18n="roll.title">Еклерово руло</a>
-              </div>
-            </div>
-            <a href="#other-products" data-i18n="productCats.other">Друго</a>
-          </div>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Hi, I am</p>
+        <div class="hero-identity">
+          <img class="name-avatar" src="assets/stefan-peev-portrait.png" alt="Stefan Peev portrait" data-i18n-alt="hero.avatarAlt" onerror="this.classList.add('is-missing')">
+          <h1 data-i18n="hero.name">Stefan Peev</h1>
         </div>
-        <a href="#services" data-i18n="nav.services">Услуги</a>
-        <a href="#visit" data-i18n="nav.contacts">Контакти</a>
-      </nav>
-      <div class="header-actions">
-        <button class="lang active" type="button" data-lang="bg" aria-pressed="true">BG</button>
-        <button class="lang" type="button" data-lang="en" aria-pressed="false">EN</button>
-        <button class="menu-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="role-switcher" aria-label="Team Lead | Business continuity | Atlassian Administrator | Project Management" data-i18n-aria-label="hero.rolesAria">
+          <span class="role-label" data-i18n="hero.roleLabel">Focus</span>
+          <span class="role-window" aria-hidden="true">
+            <span style="--i: 0" data-i18n="hero.role1">Team Lead</span>
+            <span style="--i: 1" data-i18n="hero.role2">Business continuity</span>
+            <span style="--i: 2" data-i18n="hero.role3">Atlassian Administrator</span>
+            <span style="--i: 3" data-i18n="hero.role4">Project Management</span>
+          </span>
+        </div>
+        <p class="hero-text" data-i18n="hero.text">
+          Helping teams build clearer processes, reliable services and smarter automation.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects" data-i18n="hero.work">View My Work</a>
+          <a class="btn secondary" href="#contact" data-i18n="hero.contact">Get in Touch</a>
+          <a class="btn ghost" href="assets/Stefan-Peev-CV-EN.pdf" data-modal-pdf="assets/Stefan-Peev-CV-EN.pdf" data-modal-title="Stefan Peev CV" data-i18n-modal-title="modal.cvTitle" data-i18n="hero.cv">View CV</a>
+        </div>
+        <div class="impact-board" aria-label="Career impact">
+          <div class="impact-backdrop" aria-hidden="true">
+            <img src="assets/hero-operations.png" alt="">
+            <div class="status-card">
+              <span data-i18n="hero.cardTitle">Operational Overview</span>
+              <small data-i18n="hero.cardText">Processes • SLAs • Reporting • Automation</small>
+            </div>
+          </div>
+          <article class="impact-card primary-impact">
+            <strong data-i18n="metrics.experienceValue">4+ years</strong>
+            <span data-i18n="metrics.experience">IT Operations & Atlassian</span>
+          </article>
+          <article class="impact-card">
+            <strong>4,700+</strong>
+            <span data-i18n="metrics.users">users supported</span>
+          </article>
+          <article class="impact-card">
+            <strong>50+</strong>
+            <span data-i18n="metrics.projects">Jira/JSM projects</span>
+          </article>
+          <article class="impact-card">
+            <strong>50+</strong>
+            <span data-i18n="metrics.apps">critical applications</span>
+          </article>
+          <article class="impact-card">
+            <strong data-i18n="metrics.teamLeadValue">2 years</strong>
+            <span data-i18n="metrics.teamLead">Team Lead experience</span>
+          </article>
+          <article class="impact-card">
+            <strong>10+</strong>
+            <span data-i18n="metrics.released">projects delivered</span>
+          </article>
+        </div>
       </div>
-    </header>
-
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобилна навигация">
-      <a href="#story" data-i18n="nav.story">История</a>
-      <a href="#selection" data-i18n="nav.selection">Селекция</a>
-      <a href="#products" data-i18n="nav.products">Продукти</a>
-      <a href="#services" data-i18n="nav.services">Услуги</a>
-      <a href="#visit" data-i18n="nav.contacts">Контакти</a>
-      <a class="button primary mobile-nav-cta" href="#visit" data-contact-cta data-i18n="hero.primary">Посетете ни</a>
-    </nav>
-
-    <main id="top">
-      <section class="hero">
-        <video class="hero-video-bg" data-hero-video="bg" src="assets/videos/ekleria-video-download.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
-        <video class="hero-video" data-hero-video="main" src="assets/videos/ekleria-video-download.mp4" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg"></video>
-        <div class="hero-shade"></div>
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Специализирана пекарна за Еклери</p>
-          <h1 data-i18n="hero.title">Еклери по оригинална рецепта.</h1>
-          <p class="hero-copy" data-i18n="hero.copy">Място, в което фокусът е един: различни видове еклери, приготвени на място с истински съставки, неустоим крем и фина глазура.</p>
-          <div class="hero-services" aria-label="Нашите услуги">
-            <span class="hero-services-dot" aria-hidden="true"></span>
-            <span class="hero-services-track" data-services-rotator>
-              <span class="hero-services-text">Поръчайте еклери за дома</span>
-            </span>
-          </div>
-          <div class="hero-actions">
-            <a class="button primary" href="#visit" data-contact-cta data-i18n="hero.primary">Посетете ни</a>
-            <a class="button secondary" href="#story" data-i18n="hero.secondary">Запознайте се с нас</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="marquee" aria-label="Акценти">
-        <span data-i18n="strip.one">Оригинална рецепта</span>
-        <span data-i18n="strip.two">Еклери всеки ден</span>
-        <span data-i18n="strip.three">Еклери с активен въглен</span>
-        <span data-i18n="strip.four">Еклери по поръчка</span>
-      </section>
-
-      <section class="story section" id="story">
-        <div class="section-copy">
-          <p class="eyebrow" data-i18n="story.eyebrow">Кои сме ние</p>
-          <h2 data-i18n="story.title">Сладкарски опит, превърнат в собствен дом за вкус.</h2>
-          <p data-i18n="story.copy">След повече от 15 години в занаята Тихомир отваря Еклерия на 27 октомври 2025 г. заедно със своята дама - специализирана пекарна с ясен характер, в която витрината говори най-силно чрез еклерите по оригинална рецепта.</p>
-          <p data-i18n="story.copy2">Тук всяко печиво носи лично отношение: от крема и глазурата до последния детайл в кутията, която стига до вас.</p>
-        </div>
-        <figure class="portrait">
-          <img loading="lazy" decoding="async" src="assets/images/founders.png" alt="Екипът на Пекарна Еклерия">
-        </figure>
-      </section>
-
-      <section class="video-section section">
-        <div class="section-copy">
-          <p class="eyebrow" data-i18n="atelier.eyebrow">В ателието</p>
-          <h2 data-i18n="atelier.title">Кадрите са част от вкуса.</h2>
-          <p data-i18n="atelier.copy">Три кратки кадъра от ателието: кремът, глазурата и финалният детайл. Всичко се приготвя на място - внимателно, чисто и с характер.</p>
-        </div>
-        <div class="video-stack">
-          <video src="assets/videos/atelier-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <video src="assets/videos/atelier-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <video src="assets/videos/atelier-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        </div>
-      </section>
-
-      <section class="gallery section" id="gallery" aria-label="Галерия" hidden>
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="gallery.eyebrow">Галерия</p>
-          <h2 data-i18n="gallery.title">Гланц, крем и характер.</h2>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item tall">
-            <img loading="lazy" decoding="async" src="assets/images/gallery-charcoal-variety.png" alt="Асортимент еклери с активен въглен и глазури">
-          </figure>
-          <figure class="gallery-item">
-            <img loading="lazy" decoding="async" src="assets/images/gallery-caramel-shine.png" alt="Карамелени еклери с гланцова глазура">
-          </figure>
-          <figure class="gallery-item">
-            <img loading="lazy" decoding="async" src="assets/images/gallery-tasting-board.png" alt="Разрязани еклери с крем">
-          </figure>
-          <figure class="gallery-item wide">
-            <img loading="lazy" decoding="async" src="assets/images/gallery-assorted-eclairs.png" alt="Кутия с разнообразни еклери">
-          </figure>
-        </div>
-      </section>
-
-      <section class="selection section" id="selection">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="selection.eyebrow">Селекция</p>
-          <h2 data-i18n="selection.title">Витрина с ритъм, блясък и аромат.</h2>
-        </div>
-        <div class="product-grid">
-          <article class="product feature">
-            <img loading="lazy" decoding="async" src="assets/images/signature-eclair.png" alt="Еклерово Руло на Еклерия">
-            <div>
-              <span data-i18n="products.signature.kicker">Само по поръчка</span>
-              <h3 data-i18n="products.signature.title">Еклерово Руло</h3>
-              <p data-i18n="products.signature.copy">Специално произведение, което приготвяме само по поръчка - нежен крем, фина глазура и характерният почерк на Еклерия.</p>
-            </div>
+      <div class="services-panel" aria-label="B2B services" data-i18n-aria-label="services.aria">
+        <p class="section-kicker" data-i18n="services.kicker">B2B Services</p>
+        <h2 data-i18n="services.title">Practical support for teams that need clearer processes, better project control, smarter tools and less manual work.</h2>
+        <p class="services-intro" data-i18n="services.intro">I help teams improve the way they work by organizing projects, clarifying responsibilities, optimizing internal processes, improving Jira / Service Desk setups, and introducing practical automation and AI-supported workflows.</p>
+        <div class="services-grid service-card-grid">
+          <article class="service-card">
+            <h3 data-i18n="services.card1Title">Atlassian & Service Desk</h3>
+            <p data-i18n="services.card1Text">Jira / JSM configuration, workflows, permissions, dashboards, filters, JQL, request types, Kanban boards and incident processes.</p>
           </article>
-          <article class="product">
-            <img loading="lazy" decoding="async" src="assets/images/display-case.png" alt="Витрина с еклери">
-            <div>
-              <span data-i18n="products.case.kicker">Всеки ден</span>
-              <h3 data-i18n="products.case.title">Нашите еклерови произведения</h3>
-              <p data-i18n="products.case.copy">Карамел, бял шоколад, тъмен шоколад и течен шоколад - вкусове с ясна рецепта и ежедневна свежест.</p>
-            </div>
+          <article class="service-card">
+            <h3 data-i18n="services.card2Title">Project Management & Delivery Coordination</h3>
+            <p data-i18n="services.card2Text">Project planning, task coordination, stakeholder communication, delivery tracking, risk follow-up, documentation, testing coordination and rollout support.</p>
           </article>
-          <article class="product dark">
-            <img loading="lazy" decoding="async" src="assets/images/selection-charcoal-eclairs-v3.png" alt="Еклери с активен въглен">
-            <div>
-              <span data-i18n="products.charcoal.kicker">Единствен по рода си</span>
-              <h3 data-i18n="products.charcoal.title">Еклер с активен въглен</h3>
-              <p data-i18n="products.charcoal.copy">Разпознаваем специалитет на Еклерия - смел вкус, драматичен цвят и витрина, която се помни.</p>
-            </div>
+          <article class="service-card">
+            <h3 data-i18n="services.card3Title">Process Improvement</h3>
+            <p data-i18n="services.card3Text">Review and optimization of internal workflows, task ownership, handovers, bottlenecks, approvals and repetitive manual steps.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.card4Title">AI & Automation</h3>
+            <p data-i18n="services.card4Text">Practical AI-supported solutions for documentation, reporting, summaries, task preparation, data extraction, process automation and reducing repetitive work.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.card5Title">Application & ERP Support</h3>
+            <p data-i18n="services.card5Text">Coordination between business and technical teams, requirements clarification, ERP / internal system improvements, user support and adoption.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.card6Title">Business Analysis & Requirements</h3>
+            <p data-i18n="services.card6Text">Understanding business needs, translating them into clear requirements, preparing user stories, acceptance criteria, process documentation and supporting better decision-making.</p>
           </article>
         </div>
-      </section>
+        <p class="services-close" data-i18n="services.close">Best fit for teams that need more structure, visibility, project control and efficiency in their daily operations.</p>
+        <p class="services-cta" data-i18n="services.cta">Open to B2B projects, consulting, audits and short-term collaborations.</p>
+      </div>
+    </section>
 
-      <section class="products section" id="products">
-        <div class="products-intro">
+    <section class="signal-strip" aria-label="Professional focus areas">
+      <span data-i18n="signal.itsm">ITSM</span>
+      <span data-i18n="signal.atlassian">Atlassian Cloud</span>
+      <span data-i18n="signal.continuity">Business Continuity</span>
+      <span data-i18n="signal.automation">Automation</span>
+      <span data-i18n="signal.powerbi">Power BI</span>
+      <span data-i18n="signal.delivery">Stakeholder Delivery</span>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="section-kicker" data-i18n="about.kicker">About me</p>
+      <div class="about-intro">
+        <div>
+          <h2 data-i18n="about.title">I connect operations, people and systems so work moves with less friction.</h2>
+        </div>
+        <div class="about-story">
+          <p data-i18n="about.copy">
+            I am an IT Operations and Service Management professional with 4+ years of hands-on work across team leadership, project coordination, business continuity, Service Desk, application management and Atlassian Cloud administration.
+          </p>
+          <p data-i18n="about.copy2">
+            I have led teams and coordinated projects where business priorities, technical constraints and operational risk all had to move together. My strongest zone is turning that complexity into Jira and JSM workflows, SLA logic, automations, dashboards and clear ownership.
+          </p>
+          <p data-i18n="about.copy3">
+            I also work with AI-supported tools and integrations, from Gemini-assisted Jira automation to data-driven reporting, so teams can reduce manual effort and make faster, better documented decisions.
+          </p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="about.card1Title">Team & project leadership</h3>
+          <p data-i18n="about.card1Text">Leading teams, managing priorities, coordinating stakeholders and delivering projects from assessment and testing to rollout and adoption.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="about.card2Title">Application management</h3>
+          <p data-i18n="about.card2Text">Ownership of critical applications, incidents, escalations, vendor coordination, access processes, reporting and service reliability.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="about.card3Title">Atlassian, automation & AI</h3>
+          <p data-i18n="about.card3Text">Jira, JSM and Confluence administration with permissions, workflows, SLAs, dashboards, Marketplace apps, integrations and AI-supported automations.</p>
+        </article>
+      </div>
+    </section>
+
+<section class="section timeline" id="experience">
+      <p class="section-kicker" data-i18n="experience.kicker">Timeline</p>
+      <div class="section-heading compact">
+        <h2 data-i18n="experience.title">Professional experience</h2>
+      </div>
+      <div class="timeline-list">
+        <article>
+          <time data-i18n="experience.date1">Apr 2024 - Feb 2026</time>
           <div>
-            <p class="eyebrow" data-i18n="productsSection.eyebrow">Продукти</p>
-            <h2 data-i18n="productsSection.title">Еклери, които остават в паметта.</h2>
+            <h3 data-i18n="experience.role1">Business Continuity Team Lead</h3>
+            <p data-i18n="experience.company1">Econt Express AD</p>
+            <ul>
+              <li data-i18n="experience.role1a">Led operational coordination for 50+ business-critical applications, ERP systems and server infrastructure.</li>
+              <li data-i18n="experience.role1b">Managed incidents, escalations, service risks and reporting for management visibility.</li>
+              <li data-i18n="experience.role1c">Delivered technical and process improvement projects across business and technical teams.</li>
+            </ul>
           </div>
-          <p data-i18n="productsSection.copy">В началото на Варна, на ул. "Под Игото" 58, Еклерия превръща десерта в малък ритуал: истински съставки, неустоим крем, фина глазура и свежест, която се усеща още от първата хапка.</p>
-        </div>
-        <div class="product-categories" aria-label="Категории продукти">
-          <a href="#eclairs" data-product-target="0" data-i18n="productCats.eclairs">Еклери</a>
-          <a href="#eclairs" data-product-target="5" data-i18n="productCats.order">Поръчкови</a>
-          <a href="#other-products" data-i18n="productCats.other">Друго</a>
-        </div>
-        <div class="product-stage" id="eclairs" data-product-stage>
-          <div class="product-stage-sticky">
-            <div class="product-stage-head">
-              <span data-product-count>01 / 05</span>
-              <div class="product-stage-line"><i data-product-progress></i></div>
-            </div>
-            <div class="product-track" data-product-track>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="caramel.number">Продукт 01</span>
-                  <h3 data-i18n="caramel.title">Карамел</h3>
-                  <p data-i18n="caramel.copy">Еклер с копринен крем и лъскава карамелена глазура, която се стича бавно и оставя дълбок, топъл послевкус. Свеж, лек и изкушаващо балансиран.</p>
-                  <ul>
-                    <li data-i18n="caramel.note1">Приготвен на място</li>
-                    <li data-i18n="caramel.note2">Истински съставки</li>
-                    <li data-i18n="caramel.note3">Фин карамелен завършек</li>
-                  </ul>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-caramel.png" alt="Еклер Карамел">
-                  </figure>
-                </div>
-              </article>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="product.pistachio.number">Продукт 02</span>
-                  <h3 data-i18n="flavor.pistachio.title">Шам фъстък</h3>
-                  <p data-i18n="flavor.pistachio.copy">Еклер с изразителна глазура от шам фъстък, фин ядков характер и свеж крем, който балансира сладостта с елегантна плътност.</p>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-pistachio.png" alt="Еклер Шам фъстък">
-                  </figure>
-                </div>
-              </article>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="product.white.number">Продукт 03</span>
-                  <h3 data-i18n="flavor.white.title">Бял шоколад</h3>
-                  <p data-i18n="flavor.white.copy">Нежен еклер с копринена глазура от бял шоколад, мек крем и светъл, чист финал.</p>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-white-chocolate.png" alt="Еклер Бял шоколад">
-                  </figure>
-                </div>
-              </article>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="product.dark.number">Продукт 04</span>
-                  <h3 data-i18n="flavor.dark.title">Тъмен шоколад</h3>
-                  <p data-i18n="flavor.dark.copy">По-дълбок шоколадов профил с лъскава глазура, наситен вкус и елегантен какаов финал.</p>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-dark-chocolate.png" alt="Еклер Тъмен шоколад">
-                  </figure>
-                </div>
-              </article>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="product.charcoal.number">Продукт 05</span>
-                  <h3 data-i18n="flavor.charcoal.title">Активен въглен</h3>
-                  <p data-i18n="flavor.charcoal.copy">Специалитетът на Еклерия: еклер с активен въглен, контрастен крем и драматична визия, създадена да се помни.</p>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render charcoal-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-charcoal.png" alt="Еклер с активен въглен">
-                  </figure>
-                </div>
-              </article>
-              <article class="product-slide">
-                <div class="product-slide-copy">
-                  <span data-i18n="product.roll.number">Продукт 06</span>
-                  <h3 data-i18n="roll.title">Еклерово руло</h3>
-                  <p data-i18n="roll.copy">Руло с пухкаво тесто и нежен крем, завършено със заливка по ваш избор, което се предлага по предварително направена поръчка.</p>
-                  <ul class="glaze-list">
-                    <li data-i18n="roll.glaze1">Карамел</li>
-                    <li data-i18n="roll.glaze2">Черен ганаш</li>
-                    <li data-i18n="roll.glaze3">Бял ганаш</li>
-                    <li data-i18n="roll.glaze4">Пистачио</li>
-                    <li data-i18n="roll.glaze5">Млечен шоколад</li>
-                  </ul>
-                </div>
-                <div class="product-spotlight">
-                  <div class="spotlight-beam"></div>
-                  <figure class="eclair-pedestal boutique-render roll-render">
-                    <img loading="lazy" decoding="async" src="assets/images/product-alpha-roll.png" alt="Еклерово руло">
-                  </figure>
-                </div>
-              </article>
-            </div>
+        </article>
+        <article>
+          <time data-i18n="experience.date2">May 2022 - Apr 2024</time>
+          <div>
+            <h3 data-i18n="experience.role2">Atlassian Administrator</h3>
+            <p data-i18n="experience.company1">Econt Express AD</p>
+            <ul>
+              <li data-i18n="experience.role2a">Administered Jira, JSM and Confluence Cloud for 50+ projects and 4,700+ users.</li>
+              <li data-i18n="experience.role2b">Designed ITSM-aligned workflows, request types, forms, permissions, approvals, SLAs and automations.</li>
+              <li data-i18n="experience.role2c">Improved visibility through reporting, dashboards, integrations and Power BI-supported analysis.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <time data-i18n="experience.date3">May 2019 - Mar 2020</time>
+          <div>
+            <h3 data-i18n="experience.role3">Legal Assistant</h3>
+            <p data-i18n="experience.company3">UniCredit Bulbank</p>
+            <ul>
+              <li data-i18n="experience.role3a">Supported documentation, compliance-related tasks, internal coordination and professional communication.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section class="section projects" id="projects">
+      <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+      <article class="memory-project">
+        <div class="memory-copy">
+          <span class="project-label" data-i18n="memory.label">Personal product build</span>
+          <h2 data-i18n="memory.title">Memory Duel - online memory game</h2>
+          <p data-i18n="memory.copy">
+            A fully owned and delivered browser game project: from product idea, UX flow and gameplay logic to online rooms, authentication, ranking and deployment.
+          </p>
+          <div class="memory-actions">
+            <a class="btn primary" href="https://speev3366.github.io/MemoryGame/" target="_blank" rel="noreferrer" data-i18n="memory.cta">Open live project</a>
+            <span data-i18n="memory.owner">100% owned and implemented by Stefan Peev</span>
+          </div>
+          <div class="memory-points">
+            <span data-i18n="memory.point1">Local, AI and online multiplayer modes</span>
+            <span data-i18n="memory.point2">Supabase Auth, PostgreSQL, Realtime and RPC logic</span>
+            <span data-i18n="memory.point3">Ranking, match history, rooms, invite links and protected flows</span>
+            <span data-i18n="memory.point4">Responsive browser experience for desktop and mobile</span>
           </div>
         </div>
-        <figure class="products-overview">
-          <img loading="lazy" decoding="async" src="assets/images/products-overview.png" alt="Селекция от еклери на Еклерия">
+        <div class="memory-visual" aria-label="Memory Duel project preview" data-i18n-aria-label="memory.visualAria">
+          <div class="memory-board" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span class="is-open">AI</span>
+            <span></span>
+            <span class="is-match">40</span>
+            <span></span>
+            <span></span>
+            <span class="is-open">RT</span>
+            <span></span>
+          </div>
+          <div class="memory-panel">
+            <span data-i18n="memory.panelMode">Realtime duel</span>
+            <strong>20 / 30 / 40</strong>
+            <small data-i18n="memory.panelText">cards, rank, rooms and match history</small>
+          </div>
+        </div>
+      </article>
+      <div class="project-shell">
+        <div class="project-copy">
+          <span class="project-label" data-i18n="projects.label">Project signal</span>
+          <h2 data-i18n="projects.title">Humand product rollout</h2>
+          <p data-i18n="projects.copy">A dedicated project section is ready for the next stage. For now, this area highlights verified external feedback from a company-wide product rollout for 4,700+ people, where Stefan acted as stakeholder and project manager from kickoff to adoption.</p>
+          <div class="project-stats">
+            <span data-i18n="projects.stat1">4,700+ users</span>
+            <span data-i18n="projects.stat2">Stakeholder ownership</span>
+            <span data-i18n="projects.stat3">End-to-end project management</span>
+          </div>
+          <div class="project-scope" aria-label="Project scope">
+            <span data-i18n="projects.scopeLabel">Scope delivered</span>
+            <ul>
+              <li data-i18n="projects.scope1">Assessed the current social communication platform and business needs.</li>
+              <li data-i18n="projects.scope2">Led alternative product research, selection, testing and risk analysis.</li>
+              <li data-i18n="projects.scope3">Prepared implementation, migration and integration reproduction plans.</li>
+              <li data-i18n="projects.scope4">Supported contract alignment to protect the client's interests.</li>
+              <li data-i18n="projects.scope5">Built the communication strategy and acted as main contact point.</li>
+              <li data-i18n="projects.scope6">Delivered a successful migration with no loss of data or user accounts.</li>
+            </ul>
+          </div>
+        </div>
+        <figure class="recommendation-card">
+          <button class="recommendation-image" type="button" data-modal-image="assets/recommendation-humand-cropped.jpg" data-modal-title="LinkedIn recommendation">
+            <img src="assets/recommendation-humand-cropped.jpg" loading="lazy" alt="LinkedIn recommendation from Cinzia Soro for Stefan Peev">
+          </button>
+          <figcaption>
+            <blockquote data-i18n="projects.quote">"Stefan was excellent at managing the migration from their previous tool, handling a complex change process with organisation, clarity, and real attention to detail."</blockquote>
+            <span>Cinzia Soro | Humand</span>
+          </figcaption>
         </figure>
-        <div class="products-showcase" data-legacy-products>
-          <div class="eclair-list">
-            <article class="product-detail caramel-feature">
-              <div class="product-detail-copy">
-                <span data-i18n="caramel.number">Продукт 01</span>
-                <h3 data-i18n="caramel.title">Карамел</h3>
-                <p data-i18n="caramel.copy">Еклер с копринен крем и лъскава карамелена глазура, която се стича бавно и оставя дълбок, топъл послевкус. Свеж, лек и изкушаващо балансиран.</p>
-                <ul>
-                  <li data-i18n="caramel.note1">Приготвен на място</li>
-                  <li data-i18n="caramel.note2">Истински съставки</li>
-                  <li data-i18n="caramel.note3">Фин карамелен завършек</li>
-                </ul>
-              </div>
-              <div class="caramel-gallery">
-                <img loading="lazy" decoding="async" src="assets/images/product-caramel-close.png" alt="Еклери с карамелена глазура отблизо">
-                <img loading="lazy" decoding="async" src="assets/images/product-caramel-tray.png" alt="Еклери Карамел в тава">
-              </div>
-            </article>
-            <div class="product-flavors">
-              <article><span>02</span><h3 data-i18n="flavor.white.title">Бял шоколад</h3><p data-i18n="flavor.white.copy">Нежен, светъл и кремообразен профил.</p></article>
-              <article><span>03</span><h3 data-i18n="flavor.dark.title">Тъмен шоколад</h3><p data-i18n="flavor.dark.copy">По-дълбок шоколадов вкус с елегантен финал.</p></article>
-              <article><span>04</span><h3 data-i18n="flavor.liquid.title">Течен шоколад</h3><p data-i18n="flavor.liquid.copy">Богат, мек и изразително шоколадов.</p></article>
-              <article class="charcoal"><span>05</span><h3 data-i18n="flavor.charcoal.title">Активен въглен</h3><p data-i18n="flavor.charcoal.copy">Единствен по рода си еклер с драматичен характер.</p></article>
-            </div>
-          </div>
+      </div>
+      <div class="ai-projects">
+        <div class="section-heading compact">
+          <p class="section-kicker" data-i18n="aiProjects.kicker">AI & Integration Projects</p>
+          <h2 data-i18n="aiProjects.title">Automation case studies focused on traceability and operational efficiency.</h2>
         </div>
-        <div class="other-products" id="other-products">
-          <span data-i18n="otherProducts.kicker">Друго</span>
-          <p data-i18n="otherProducts.copy">Закуски и сезонни предложения присъстват като допълнение към основния фокус на Еклерия: еклерите.</p>
-        </div>
-      </section>
-
-      <section class="services section" id="services">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="services.eyebrow">Услуги</p>
-          <h2 data-i18n="services.title">От витрината до вашата трапеза.</h2>
-          <p class="services-intro-copy" data-i18n="services.intro">Искате да опитате от нашите изкусителни произведения или да обсъдим възможност за партньорство? Не се колебайте да ни посетите или да се свържете с нас.</p>
-        </div>
-        <div class="service-list">
-          <article>
-            <span>01</span>
-            <h3 data-i18n="services.two.title">Доставка до адрес</h3>
-            <p data-i18n="services.two.copy">Доставяме пресни еклери до дома или на посочен от вас адрес във Варна - бързо, грижливо опаковани и уточнени директно с екипа.</p>
+        <div class="ai-project-grid">
+          <article class="ai-project-card">
+            <span class="project-label" data-i18n="aiProjects.card1Label">Document automation</span>
+            <h3 data-i18n="aiProjects.card1Title">AI Invoice-to-Jira Automation</h3>
+            <p class="ai-project-subtitle" data-i18n="aiProjects.card1Subtitle">AI-supported document processing and Jira field automation.</p>
+            <p data-i18n="aiProjects.card1Copy">A practical automation where an invoice is received by email, logged in Jira, processed by an AI agent and the extracted information is automatically populated into the correct Jira fields. The goal is to reduce manual work, improve traceability and speed up document-related request handling.</p>
+            <ul>
+              <li data-i18n="aiProjects.card1Point1">Email-to-Jira request creation</li>
+              <li data-i18n="aiProjects.card1Point2">AI-based invoice data extraction</li>
+              <li data-i18n="aiProjects.card1Point3">Automatic Jira field population</li>
+              <li data-i18n="aiProjects.card1Point4">Reduced manual work and duplicate data entry</li>
+              <li data-i18n="aiProjects.card1Point5">Improved visibility and traceability of invoice-related requests</li>
+            </ul>
           </article>
-          <article>
-            <span>02</span>
-            <h3 data-i18n="services.three.title">Зареждане на магазини и HoReCa</h3>
-            <p data-i18n="services.three.copy">Зареждаме магазини, кафетерии и сладкарници с печива и десерти за партньори, които търсят постоянство и разпознаваем вкус.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3 data-i18n="services.one.title">Кетъринг услуги</h3>
-            <p data-i18n="services.one.copy">Поръчайте от нашите сладки произведения за вашия специален повод.</p>
+          <article class="ai-project-card accent-card">
+            <span class="project-label" data-i18n="aiProjects.card2Label">Service integration</span>
+            <h3 data-i18n="aiProjects.card2Title">Jira ↔ ServiceNow Integration</h3>
+            <p class="ai-project-subtitle" data-i18n="aiProjects.card2Subtitle">Cross-platform service coordination and status synchronization.</p>
+            <p data-i18n="aiProjects.card2Copy">An integration between Jira and ServiceNow built for data exchange, status synchronization and reflecting updates when requests or incidents change. The goal is to improve team communication, reduce manual tracking and provide stronger operational visibility.</p>
+            <ul>
+              <li data-i18n="aiProjects.card2Point1">Data exchange between Jira and ServiceNow</li>
+              <li data-i18n="aiProjects.card2Point2">Status updates and synchronization</li>
+              <li data-i18n="aiProjects.card2Point3">Update reflection between connected systems</li>
+              <li data-i18n="aiProjects.card2Point4">Improved service coordination</li>
+              <li data-i18n="aiProjects.card2Point5">Reduced manual communication between teams</li>
+            </ul>
           </article>
         </div>
-      </section>
+      </div>
+      <div class="project-portfolio" aria-label="Additional project areas">
+        <article class="project-area">
+          <span data-i18n="projects.area1Label">Jira integrations</span>
+          <h3 data-i18n="projects.area1Title">Connected service ecosystem</h3>
+          <ul>
+            <li data-i18n="projects.area1Item1">ERP integration for account management similar to Active Directory processes.</li>
+            <li data-i18n="projects.area1Item2">Jira integration with ServiceNow for service coordination and visibility.</li>
+            <li data-i18n="projects.area1Item3">Jira and Power BI integration for operational analytics and reporting.</li>
+            <li data-i18n="projects.area1Item4">Jira and Gemini integration for AI-supported service workflows.</li>
+          </ul>
+        </article>
+        <article class="project-area featured-area">
+          <span data-i18n="projects.area2Label">ITSM operating model</span>
+          <h3 data-i18n="projects.area2Title">High-control Jira service management</h3>
+          <ul>
+            <li data-i18n="projects.area2Item1">High-level Jira governance across projects, roles and service processes.</li>
+            <li data-i18n="projects.area2Item2">Structured projects with clear goals, tasks, workflows and SLA logic.</li>
+            <li data-i18n="projects.area2Item3">Standardized request channel designed for maximum handling efficiency.</li>
+            <li data-i18n="projects.area2Item4">Automations across process steps and cross-team communication.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <section class="visit section" id="visit">
-        <div class="visit-card">
-          <p class="eyebrow" data-i18n="visit.eyebrow">Посетете ни</p>
-          <h2 data-i18n="visit.title">гр. Варна, ул. Под Игото 58</h2>
-          <div class="visit-map-hover">
-            <a class="visit-map-icon" href="https://www.google.com/maps/place/%D0%9F%D0%B5%D0%BA%D0%B0%D1%80%D0%BD%D0%B0+%D0%95%D0%9A%D0%9B%D0%95%D0%A0%D0%98%D0%AF/@43.2176473,27.8854924,57m/data=!3m1!1e3!4m9!1m2!2m1!1z0J_QvtGB0LXRgtC10YLQtSDQvdC4ICDQs9GALiDQktCw0YDQvdCwLCDRg9C7LiDQn9C-0LQg0JjQs9C-0YLQviA1OCB2YXJuYQ!3m5!1s0x40a45500725c8f8f:0x15cb7eb7ad7bf8bb!8m2!3d43.2176662!4d27.8856834!16s%2Fg%2F11mltx53qh" target="_blank" rel="noopener">
-              <span class="visit-pin" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2.6a6.6 6.6 0 0 0-6.6 6.6c0 4.6 6.6 12.2 6.6 12.2s6.6-7.6 6.6-12.2A6.6 6.6 0 0 0 12 2.6Z"/><circle cx="12" cy="9.2" r="2.4"/></svg>
-              </span>
-              <span data-i18n="visit.map">Виж на картата</span>
-            </a>
-            <span class="visit-map-popup" aria-hidden="true">
-              <iframe class="visit-map-frame" src="https://maps.google.com/maps?q=43.2176662,27.8856834&z=16&hl=bg&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта - Пекарна Еклерия" tabindex="-1"></iframe>
-            </span>
+<section class="section skills" id="skills">
+      <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
+      <div class="section-heading compact">
+        <h2 data-i18n="skills.title">Core capabilities</h2>
+      </div>
+      <div class="skill-cloud">
+        <span data-i18n="skills.item1">Team Leadership</span>
+        <span data-i18n="skills.item2">Project Management</span>
+        <span data-i18n="skills.item3">IT Service Management</span>
+        <span data-i18n="skills.item4">Business Continuity</span>
+        <span data-i18n="skills.item5">Incident Management</span>
+        <span data-i18n="skills.item6">SLA Management</span>
+        <span data-i18n="skills.item7">Process Documentation</span>
+        <span data-i18n="skills.item8">Automation</span>
+        <span data-i18n="skills.item9">Dashboards</span>
+        <span data-i18n="skills.item10">Power BI</span>
+        <span data-i18n="skills.item11">AI-supported Solutions</span>
+        <span>Jira</span>
+        <span>Jira Service Management</span>
+        <span>Confluence</span>
+      </div>
+    </section>
+
+<section class="section expertise" id="expertise">
+      <p class="section-kicker" data-i18n="expertise.kicker">Expertise</p>
+      <div class="expertise-grid">
+        <article>
+          <h2 data-i18n="expertise.card1Title">Service Desk & Atlassian</h2>
+          <p data-i18n="expertise.card1Text">Large-scale Atlassian Cloud administration, service lifecycle optimization, issue ownership, traceability, permissions, forms and dashboards.</p>
+        </article>
+        <article>
+          <h2 data-i18n="expertise.card2Title">Project Management & AI</h2>
+          <p data-i18n="expertise.card2Text">Research, planning, stakeholder alignment, testing, rollout and continuous improvement with automation and AI-supported tools.</p>
+        </article>
+        <article>
+          <h2 data-i18n="expertise.card3Title">Business Continuity</h2>
+          <p data-i18n="expertise.card3Text">Incident response, escalation handling, preventive procedures, operational risk monitoring and long-term service reliability.</p>
+        </article>
+      </div>
+    </section>
+
+<section class="section certifications" id="certifications">
+      <p class="section-kicker" data-i18n="certs.kicker">Certifications</p>
+      <div class="section-heading">
+        <h2 data-i18n="certs.title">Validated foundations in data, QA and analytics.</h2>
+        <p data-i18n="certs.copy">A practical base that supports service management work: structured testing, relational data thinking and analytics-driven reporting.</p>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card visual-card pdf-card">
+          <button class="cert-preview" type="button" data-modal-image="assets/certificate-power-bi-english-translation.png" data-modal-title="Power BI Desktop Certificate">
+            <img src="assets/certificate-power-bi-english-translation.png" alt="English translation of Power BI Desktop certificate from Devise Expert Training Center">
+          </button>
+          <div class="cert-body">
+            <span class="cert-provider">Devise Expert | 22.02.2023</span>
+            <h3 data-i18n="certs.pbiTitle">Power BI Desktop</h3>
+            <p data-i18n="certs.pbiText">Analytics and reporting certification completed in 2023.</p>
           </div>
-          <p data-i18n="visit.copy">Заповядайте за пресни еклери по оригинална рецепта, закуски и поръчки за специални поводи.</p>
-          <div class="contact-grid">
-            <a href="tel:+359895646009">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6.6 3.7 4.4 5.9c-.8.8-.9 2-.4 3 2.4 5.2 6.9 9.7 12.1 12.1 1 .5 2.2.3 3-.4l2.2-2.2c.5-.5.5-1.3 0-1.8l-3.1-3.1c-.5-.5-1.2-.5-1.7-.1l-1.6 1.1c-.5.4-1.2.4-1.8 0a13 13 0 0 1-3.6-3.6c-.4-.5-.4-1.2 0-1.8l1.1-1.6c.4-.5.3-1.2-.1-1.7L8.4 3.7c-.5-.5-1.3-.5-1.8 0Z"/></svg>
-              </span>
-              089 564 6009
-            </a>
-            <a href="mailto:ekleria@gmail.com">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M4 6.8h16v10.4H4V6.8Z"/><path d="m4.7 7.5 7.3 5.8 7.3-5.8"/></svg>
-              </span>
-              ekleria@gmail.com
-            </a>
-            <a href="https://www.instagram.com/pekarnaekleria/">
-              <span class="contact-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.4" cy="7.7" r=".8"/></svg>
-              </span>
-              @pekarnaekleria
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61581988955698&sk=reels_tab">
-              <span class="contact-icon contact-icon-solid contact-icon-facebook" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M14 8.2h2.3V5.1c-.4-.1-1.7-.2-3-.2-3 0-5 1.8-5 5.1v2.8H5v3.5h3.3V24h3.9v-7.7h3.2l.5-3.5h-3.7v-2.4c0-1 .3-2.2 1.8-2.2Z"/></svg>
-              </span>
-              Пекарна Еклерия
-            </a>
+        </article>
+        <article class="cert-card visual-card">
+          <button class="cert-preview" type="button" data-modal-image="assets/certificate-sql.jpg" data-modal-title="Relational Databases">
+            <img src="assets/certificate-sql.jpg" loading="lazy" alt="Relational Databases certificate from Soft Academy">
+          </button>
+          <div class="cert-body">
+            <span class="cert-provider">Soft Academy | 17.12.2022</span>
+            <h3 data-i18n="certs.sqlTitle">Relational Databases</h3>
+            <p data-i18n="certs.sqlText">SQL and database fundamentals for structured operational data.</p>
           </div>
-        </div>
-        <div class="hours">
-          <h3 data-i18n="hours.title">Работно време</h3>
-          <dl>
-            <div><dt data-i18n="hours.weekdays">Понеделник - Петък</dt><dd>6:00 - 16:30</dd></div>
-            <div><dt data-i18n="hours.saturday">Събота</dt><dd>6:00 - 14:00</dd></div>
-            <div><dt data-i18n="hours.sunday">Неделя</dt><dd data-i18n="hours.closed">Почивен ден</dd></div>
-          </dl>
-        </div>
-        <figure class="storefront-photo" aria-label="Снимки от Пекарна Еклерия">
-          <img loading="lazy" decoding="async" src="assets/images/storefront-clean-crop.png" alt="Пекарна Еклерия отвън">
-          <img loading="lazy" decoding="async" src="assets/images/storefront-interior.png" alt="Витрината на Пекарна Еклерия">
-        </figure>
-      </section>
-    </main>
+        </article>
+        <article class="cert-card visual-card">
+          <button class="cert-preview" type="button" data-modal-image="assets/certificate-qa.jpg" data-modal-title="Software Testing">
+            <img src="assets/certificate-qa.jpg" loading="lazy" alt="Software Testing certificate from Soft Academy">
+          </button>
+          <div class="cert-body">
+            <span class="cert-provider">Soft Academy | 14.04.2022</span>
+            <h3 data-i18n="certs.qaTitle">Software Testing</h3>
+            <p data-i18n="certs.qaText">QA mindset for reliable processes, validation and careful rollout.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <span class="footer-copy" data-i18n="footer.copyright">© 2026 Пекарна Еклерия. Специализирана пекарна за еклери във Варна. Всички права запазени.</span>
-    </footer>
+<section class="section education">
+      <p class="section-kicker" data-i18n="education.kicker">Education</p>
+      <div class="section-heading compact">
+        <h2 data-i18n="education.title">Education timeline</h2>
+      </div>
+      <div class="education-timeline" data-active="0" aria-label="Education timeline">
+        <article tabindex="0">
+          <time>2010 - 2015</time>
+          <h3 data-i18n="education.school">High School of Mathematics "Baba Tonka" Ruse</h3>
+          <p data-i18n="education.focus">Analytical foundation</p>
+        </article>
+        <article tabindex="0">
+          <time>2015 - 2021</time>
+          <h3 data-i18n="education.law">Master's Degree in Law</h3>
+          <p data-i18n="education.unwe">University of National and World Economy - Sofia</p>
+        </article>
+        <article tabindex="0">
+          <time>2022 - 2023</time>
+          <h3 data-i18n="education.cert">QA, Relational Databases, Power BI Analytics</h3>
+          <p data-i18n="education.training">Professional certification</p>
+        </article>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+<section class="contact" id="contact">
+      <div>
+        <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+        <h2 data-i18n="contact.title">Let us build clearer operations.</h2>
+        <p data-i18n="contact.copy">Open to roles and projects around IT operations, Atlassian Cloud, service management, automation and business continuity.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:speev96@gmail.com">speev96@gmail.com</a>
+        <a href="tel:+359888416688">+359 888 41 66 88</a>
+        <a href="https://linkedin.com/in/stefanpeev29" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span data-i18n="hero.name">Stefan Peev</span>
+    <span data-i18n="footer.text">IT Operations | Atlassian Cloud | Business Continuity</span>
+  </footer>
+
+  <dialog class="media-modal" id="mediaModal" aria-label="Document preview" data-i18n-aria-label="modal.aria">
+    <button class="modal-close" type="button" aria-label="Close preview" data-i18n-aria-label="modal.closeAria" data-i18n="modal.close">Close</button>
+    <img id="modalImage" alt="">
+    <iframe id="modalFrame" title="PDF preview"></iframe>
+    <p id="modalTitle"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
